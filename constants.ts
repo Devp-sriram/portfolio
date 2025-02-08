@@ -188,7 +188,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     type: NodeTypes.CHECKPOINT,
     title: "Feb 2024",
     size: ItemSize.LARGE,
-    shouldDrawLine: true,
+    shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
   {
@@ -200,7 +200,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     image: "/timeline/huminos.svg",
     slideImage: "/timeline/huminos-freelance.jpg",
     shouldDrawLine: true,
-    alignment: Branch.RIGHT,
+    alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
@@ -248,7 +248,7 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     slideImage: "/timeline/si-head.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
-  }
+  },
 ];
 
 export type TimelineNodeV2 = CheckpointNode | BranchNode;
