@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001697",
     "gsap": "3.8.0",
     "next": "12",
     "react": "^17.0.2",
