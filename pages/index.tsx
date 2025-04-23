@@ -88,7 +88,6 @@ export default function Home() {
           <CollaborationSection />
           <Footer />
         </main>
-        <Scripts />
       </Layout>
     </>
   );
