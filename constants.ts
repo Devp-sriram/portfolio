@@ -36,9 +36,9 @@ export const MENULINKS = [
 
 export const TYPED_STRINGS = [
   "I design and develop things",
-  "I develop modern frontend apps",
+  "I develop modern full stack apps",
   "I design dynamic user experience",
-  "I design and develop motion",
+  "I design and develop robust apps",
 ];
 
 export const EMAIL = "sriramraman@gmail.com";
@@ -67,7 +67,7 @@ export const PROJECTS: IProject[] = [
     description: "A site to manage employee deatails",
     gradient: ["#1F6582", "#1ABCFE"],
     url: "https://employee-mgmt-app.vercel.app/",
-    tech: ["typescript", "react.js","next.js","tailwind"],
+    tech: ["typescript", "react","next","tailwind"],
   },
   {
     name: "imdb-hub",
@@ -102,15 +102,14 @@ export const SKILLS = {
   frontend: [
     "javascript",
     "react",
-    "next.js",
+    "next",
     "gsap",
     "tailwind",
-    "svg",
     "html",
     "css",
   ],
   userInterface: ["figma"],
-  other: ["git", "docker", "postman", "SQL"],
+  other: ["git", "docker", "postman", "sql"],
 };
 
 export enum Branch {
@@ -143,8 +142,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "a virtual internship from forage.com , it gave me a understanding about how the software development cycle works and the key responsibilities of a software engineer",
-    image: "/timeline/reactindia.svg",
-    slideImage: "/timeline/reactindia.jpg",
+    image: "/timeline/accenture.jpg",
+    slideImage: "/timeline/accenture.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -161,8 +160,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Thought out this program I meet Industrial Experts and they shared their experience with me",
-    image: "/timeline/hotstar.svg",
-    slideImage: "/timeline/hotstar.jpeg",
+    image: "/timeline/microsoft.jpg",
+    slideImage: "/timeline/microsoft.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -179,8 +178,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "Postman Student Experts are proficient in the essential skills required for consuming APIs in Postman and applications.",
-    image: "/timeline/flipkart.svg",
-    slideImage: "/timeline/flipkart.gif",
+    image: "/timeline/postman.png",
+    slideImage: "/timeline/postman.png",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -197,8 +196,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "A hackthon to showcase my figma skills ",
-    image: "/timeline/huminos.svg",
-    slideImage: "/timeline/huminos-freelance.jpg",
+    image: "/timeline/apac.jpg",
+    slideImage: "/timeline/apac.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -215,8 +214,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "completed my bachelor's degree",
-    image: "/timeline/dltlabs.svg",
-    slideImage: "/timeline/dlt-website.jpg",
+    image: "/timeline/grad.svg",
+    slideImage: "/timeline/grad.jpeg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -226,8 +225,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
       "First internship! 🥳 at ingage technologies a company that focuses on AR and VR technology",
-    image: "/timeline/huminos.svg",
-    slideImage: "/timeline/huminos-website.jpg",
+    image: "/timeline/ingage.jpg",
+    slideImage: "/timeline/ingage.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
@@ -244,8 +243,8 @@ export const TIMELINE: Array<TimelineNodeV2> = [
     size: ItemSize.SMALL,
     subtitle:
     "got a oportunity to work with codeXintern a edu-tech compamy , Where i learned a lot about SLDC",
-    image: "/timeline/si.svg",
-    slideImage: "/timeline/si-head.jpg",
+    image: "/timeline/codeX.jpg",
+    slideImage: "/timeline/codeX.jpg",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
