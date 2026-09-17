@@ -7,6 +7,7 @@
 import { gsap, Linear } from "gsap";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { PROFILE } from "../../constants";
 
 const QuoteSection = () => {
   const quoteRef: MutableRefObject<HTMLDivElement> = useRef(null);
@@ -50,8 +51,7 @@ const QuoteSection = () => {
           willChange ? "will-change-opacity" : ""
         }`}
       >
-        I have a <span className="text-strong font-bold">strong</span> obsession
-        for attention to detail.
+        {PROFILE.quote}
       </h1>
     </div>
   );

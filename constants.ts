@@ -5,10 +5,33 @@
 // License text available at https://opensource.org/licenses/MIT
 
 export const METADATA = {
-  title: "Portfolio | sriram",
+  title: "Sriram | Software Engineer",
   description:
-    "I bridge the gap between design and development. I take responsibility to craft an aesthetic user experience using modern frontend architecture.",
-  
+    "Software engineer building full-stack applications and reliable AI-assisted developer tools.",
+};
+
+// Keep portfolio copy in one place so it can be refreshed without touching UI code.
+export const PROFILE = {
+  name: "Sriram",
+  role: "Software Engineer",
+  heroGreeting: "Hello 👋🏻",
+  about: [
+    "I am a software engineer who builds scalable full-stack applications and developer tools. ",
+    "I enjoy solving product problems with reliable backend systems, thoughtful frontend experiences, and practical AI automation.",
+  ],
+  projectsIntro:
+    "I build scalable full-stack products, from sales-engagement workflows to high-performance APIs.",
+  skillsIntro:
+    "My toolkit spans modern frontend development, backend systems, cloud-ready tooling, and AI-assisted engineering.",
+  quote: "I care deeply about building reliable systems with attention to detail.",
+  collaboration: {
+    prompt: "Interested in Collaboration",
+    left: "  turning ideas into products  ",
+    right: "  full stack development  ",
+  },
+  footer: "Connect with me on social media.",
+  credit: "Designed and developed with ❤️ by Sriram",
+  resumeUrl: "/Sriram_resume.pdf",
 };
 
 export const MENULINKS = [
@@ -35,10 +58,10 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "I design and develop things",
-  "I develop modern full stack apps",
-  "I design dynamic user experience",
-  "I design and develop robust apps",
+  "I build scalable full-stack applications",
+  "I develop reliable backend systems",
+  "I build AI-assisted developer tools",
+  "I turn product ideas into software",
 ];
 
 export const EMAIL = "sriramraman@gmail.com";
@@ -61,40 +84,24 @@ export interface IProject {
 
 export const PROJECTS: IProject[] = [
   {
-    name: "Employee management site",
-    image: "/projects/employee.png",
-    blurImage: "/projects/blur/employee.png",
-    description: "A site to manage employee deatails",
+    name: "Sales Engagement Platform",
+    image: "/projects/klenty.png",
+    blurImage: "/projects/blur/cardize-blur.jpg",
+    description:
+      "Scalable sales engagement platform with CRM integrations and AI-powered workflow automation.",
     gradient: ["#1F6582", "#1ABCFE"],
-    url: "https://employee-mgmt-app.vercel.app/",
-    tech: ["typescript", "react","next","tailwind"],
+    url: "https://www.klenty.com/feature/multi-channel-outreach/",
+    tech: ["react", "javascript"],
   },
   {
-    name: "imdb-hub",
-    image: "/projects/imdb.png",
-    blurImage: "/projects/blur/imdb.png",
-    description: "A clone of IMDB site",
+    name: "Siddhivinayak Sports",
+    image: "/projects/scrolls.jpg",
+    blurImage: "/projects/blur/scrolls-blur.jpg",
+    description:
+      "High-performance sports platform with optimized APIs, MongoDB aggregation, and Amazon S3 image storage.",
     gradient: ["#153BB9", "#0E2C8B"],
-    url: "https://imdb-hub.netlify.app/",
-    tech: ["react","tailwind",],
-  },
-  {
-    name: "AI Image generator",
-    image: "/projects/atg.png",
-    blurImage: "/projects/blur/atg.png",
-    description: "a side that can generate ai image using prompts",
-    gradient: ["#245B57", "#004741"],
-    url: "https://ai-gen-images.netlify.app/",
-    tech: ["figma", "tailwind"],
-  },
-  {
-    name: "hobby cue",
-    image: "/projects/atg.png",
-    blurImage: "/projects/blur/atg.png",
-    description: "a website that monitize the hobby of people",
-    gradient: ["#003052", "#167187"],
-    url: "https://responsive-next-mocha.vercel.app/",
-    tech: ["tailwind","gsap", "figma"],
+    url: "https://github.com/Devp-sriram/",
+    tech: ["next", "javascript"],
   }
 ];
 
@@ -131,78 +138,6 @@ export enum ItemSize {
 export const TIMELINE: Array<TimelineNodeV2> = [
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Jun 2023",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Accenture Nordics Virtual Internship",
-    size: ItemSize.SMALL,
-    subtitle:
-      "a virtual internship from forage.com , it gave me a understanding about how the software development cycle works and the key responsibilities of a software engineer",
-    image: "/timeline/accenture.jpg",
-    slideImage: "/timeline/accenture.jpg",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Oct 2023",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Microsoft Learn student ambasitor",
-    size: ItemSize.SMALL,
-    subtitle:
-      "Thought out this program I meet Industrial Experts and they shared their experience with me",
-    image: "/timeline/microsoft.jpg",
-    slideImage: "/timeline/microsoft.jpg",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: " Dec 2023",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Postman API Fundamentals Student Expert",
-    size: ItemSize.SMALL,
-    subtitle:
-      "Postman Student Experts are proficient in the essential skills required for consuming APIs in Postman and applications.",
-    image: "/timeline/postman.png",
-    slideImage: "/timeline/postman.png",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Feb 2024",
-    size: ItemSize.LARGE,
-    shouldDrawLine: false,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "APAC hackathon",
-    size: ItemSize.SMALL,
-    subtitle:
-      "A hackthon to showcase my figma skills ",
-    image: "/timeline/apac.jpg",
-    slideImage: "/timeline/apac.jpg",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
     title: "May 2024",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
@@ -210,41 +145,48 @@ export const TIMELINE: Array<TimelineNodeV2> = [
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Graduated from College 🎓",
+    title: "Bachelor of Computer Science",
     size: ItemSize.SMALL,
     subtitle:
-      "completed my bachelor's degree",
-    image: "/timeline/grad.svg",
-    slideImage: "/timeline/grad.jpeg",
+      "Graduated from Periyar Arts College, Annamalai University (CGPA: 7.2).",
+    slideImage:
+      "https://plus.unsplash.com/premium_photo-1713229182244-d617b76349d2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "Jun 2024",
-    size: ItemSize.SMALL,
-    subtitle:
-      "First internship! 🥳 at ingage technologies a company that focuses on AR and VR technology",
-    image: "/timeline/ingage.jpg",
-    slideImage: "/timeline/ingage.jpg",
-    shouldDrawLine: true,
-    alignment: Branch.LEFT,
-  },
-  {
-    type: NodeTypes.CHECKPOINT,
-    title: "Nov 2024",
+    title: "Jan 2026",
     size: ItemSize.LARGE,
     shouldDrawLine: false,
     alignment: Branch.LEFT,
   },
   {
     type: NodeTypes.CHECKPOINT,
-    title: "frontend-developer itern",
+    title: "Software Developer Intern · Klenty",
     size: ItemSize.SMALL,
     subtitle:
-    "got a oportunity to work with codeXintern a edu-tech compamy , Where i learned a lot about SLDC",
-    image: "/timeline/codeX.jpg",
-    slideImage: "/timeline/codeX.jpg",
+      "Built a sales engagement platform, microservices with RabbitMQ, CRM integrations, and AI automation.",
+    slideImage:
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+    shouldDrawLine: true,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Jun 2026",
+    size: ItemSize.LARGE,
+    shouldDrawLine: false,
+    alignment: Branch.LEFT,
+  },
+  {
+    type: NodeTypes.CHECKPOINT,
+    title: "Software Engineer · Bizdom",
+    size: ItemSize.SMALL,
+    slideImage:
+      "https://plus.unsplash.com/premium_photo-1683880731792-39c07ceea617?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    subtitle:
+      "Building secure internal coding agents and autonomous spec-to-code pipelines for enterprise software delivery.",
     shouldDrawLine: true,
     alignment: Branch.LEFT,
   },

@@ -8,6 +8,7 @@ import { gsap, Linear } from "gsap";
 import { MutableRefObject, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { isSmallScreen, NO_MOTION_PREFERENCE_QUERY } from "pages";
+import { PROFILE } from "../../constants";
 
 const COLLABORATION_STYLE = {
   SLIDING_TEXT: "opacity-20 text-5xl md:text-7xl font-bold whitespace-nowrap",
@@ -98,22 +99,21 @@ const CollaborationSection = () => {
         willChange ? "will-change-opacity" : ""
       }`}
     >
-      Interested in <span className="text-strong font-bold">Collaboration</span>
-      ?
+      {PROFILE.collaboration.prompt}?
     </h1>
   );
 
   return (
     <section className={COLLABORATION_STYLE.SECTION} ref={targetSection}>
       {renderSlidingText(
-        "  turning ideas into app  ",
+        PROFILE.collaboration.left,
         "ui-left"
       )}
 
       {renderTitle()}
 
       {renderSlidingText(
-        "  degin to development  ",
+        PROFILE.collaboration.right,
         "mt-6 md:mt-8 ui-right"
       )}
     </section>

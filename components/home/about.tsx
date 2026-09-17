@@ -1,6 +1,7 @@
 import { gsap, Linear } from "gsap";
 import React, { MutableRefObject, useEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { PROFILE } from "../../constants";
 
 const AboutSection = () => {
   const quoteRef: MutableRefObject<HTMLDivElement> = useRef(null);
@@ -63,14 +64,14 @@ const AboutSection = () => {
           willChange ? "will-change-opacity" : ""
         }`}
       >
-        I am a passionate Full Stack developer who transforms ideas into apps.{" "}
+        {PROFILE.about[0]}
       </span>
       <span
         className={`about-2 leading-tight ${
           willChange ? "will-change-opacity" : ""
         }`}
       >
-        I take responsibility to craft a good user experience as well as robust scaling on backend 
+        {PROFILE.about[1]}
       </span>
     </h1>
   );
